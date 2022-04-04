@@ -1,0 +1,13 @@
+//
+//  Development.xcconfig
+//  iTunesApp
+//
+//  Created by Çağrı Demir on 3.04.2022.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+BUNDLE_NAME = iTunesApp Dev
+API_BASE2 = itunes.apple.com/
+PRODUCT_BUNDLE_IDENTIFIER = com.itunesapp.iosdev

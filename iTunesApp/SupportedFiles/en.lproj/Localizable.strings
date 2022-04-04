@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  iTunesApp
+
+  Created by Çağrı Demir on 3.04.2022.
+  
+*/
+
+// MARK: - Common
+"successful" = "Successful";
+"Warning" = "Warning";
+"error" = "Error";
+"one" = "1";
+"two" = "2";
+"three" = "3";
+"four" = "4";

@@ -1,0 +1,79 @@
+PODS:
+  - Alamofire (5.5.0)
+  - ImageSlideshow (1.9.2):
+    - ImageSlideshow/Core (= 1.9.2)
+  - ImageSlideshow/Core (1.9.2)
+  - ImageSlideshow/SDWebImage (1.9.2):
+    - ImageSlideshow/Core
+    - SDWebImage (>= 3.7)
+  - Localize-Swift (3.2.0):
+    - Localize-Swift/LocalizeSwiftCore (= 3.2.0)
+    - Localize-Swift/UIKit (= 3.2.0)
+  - Localize-Swift/LocalizeSwiftCore (3.2.0)
+  - Localize-Swift/UIKit (3.2.0):
+    - Localize-Swift/LocalizeSwiftCore
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SDWebImage (5.12.3):
+    - SDWebImage/Core (= 5.12.3)
+  - SDWebImage/Core (5.12.3)
+  - SkeletonView (1.15.0)
+  - SwiftGen (6.5.1)
+  - SwiftLint (0.43.1)
+  - SwiftMessages (9.0.6):
+    - SwiftMessages/App (= 9.0.6)
+  - SwiftMessages/App (9.0.6)
+
+DEPENDENCIES:
+  - ImageSlideshow (~> 1.9.0)
+  - ImageSlideshow/SDWebImage (~> 1.9.0)
+  - Localize-Swift (~> 3.2.0)
+  - Moya (~> 14.0.0)
+  - RxCocoa (= 6.5.0)
+  - RxSwift (= 6.5.0)
+  - SDWebImage (~> 5.0)
+  - SkeletonView (~> 1.15.0)
+  - SwiftGen (~> 6.5.0)
+  - SwiftLint (~> 0.43.1)
+  - SwiftMessages (~> 9.0.2)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ImageSlideshow
+    - Localize-Swift
+    - Moya
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+    - SkeletonView
+    - SwiftGen
+    - SwiftLint
+    - SwiftMessages
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  ImageSlideshow: be305b54eaf2b2cfc7a7141c7c734605d44dc07d
+  Localize-Swift: 6f4475136bdb0d7b2882ea3d4ea919d70142b232
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SDWebImage: 53179a2dba77246efa8a9b85f5c5b21f8f43e38f
+  SkeletonView: cac18a3ac4f893b09d99e65072d806ef08377aae
+  SwiftGen: a6d22010845f08fe18fbdf3a07a8e380fd22e0ea
+  SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
+  SwiftMessages: f0c7ef4705a570ad6c5e208b611f4333e660ed92
+
+PODFILE CHECKSUM: e49a9715a08c6605fe2a891f937453497c5d35cb
+
+COCOAPODS: 1.11.2

@@ -17,7 +17,8 @@ target 'iTunesApp' do
   pod 'ImageSlideshow', '~> 1.9.0'
   pod "ImageSlideshow/SDWebImage", '~> 1.9.0'
   pod 'Localize-Swift', '~> 3.2.0'
-
+  pod 'SwiftyUserDefaults', '~> 5.0'
+  
   target 'iTunesAppTests' do
     inherit! :search_paths
     # Pods for testing

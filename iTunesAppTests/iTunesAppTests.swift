@@ -17,6 +17,44 @@ class iTunesAppTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    func testData() throws {
+        var filteredProducts = [Product]()
+        var products = [Product]()
+        var difference = 0
+        
+        let prodExp = expectation(description: "Product Expectation")
+        let filteredProdExp = expectation(description: "Filtered Product Expectation")
+        let diffExp = expectation(description: "Difference Expectation")
+        
+        func getProducts() {
+            ProductsRepo.getProducts { response in
+                guard let results = response.results else { return }
+                products = results
+                products.forEach { product in
+                    if !(Globals.shared.removedItemIds?.contains(obj: String(product.trackId ?? 0)) ?? false) {
+                        filteredProducts.append(product)
+                    }
+                }
+                difference = products.count - filteredProducts.count
+                prodExp.fulfill()
+                filteredProdExp.fulfill()
+                diffExp.fulfill()
+            } failure: { error in
+                print(error.rawValue)
+            }
+        }
+        
+        getProducts()
+        
+        waitForExpectations(timeout: 15) { error in
+            print(error.debugDescription)
+        }
+        
+        XCTAssertEqual(products.count, 50, "Product count must be 50.")
+        XCTAssertEqual(difference, products.count - filteredProducts.count, "Difference must be equals to products.count - filteredProducts.count.")
+        XCTAssertLessThanOrEqual(filteredProducts.count, products.count - difference, "Filtered products must be equals to products.count - difference.")
+    }
 
     func testExample() throws {
         // This is an example of a functional test case.

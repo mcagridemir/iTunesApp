@@ -16,6 +16,10 @@ internal enum LocalizationKeys {
   internal static var four: String { return LocalizationKeys.tr("Localizable", "four") }
   /// 1
   internal static var one: String { return LocalizationKeys.tr("Localizable", "one") }
+  /// %@ adet sonuc bulundu.
+  internal static func resultFound(_ p1: Any) -> String {
+    return LocalizationKeys.tr("Localizable", "result_found", String(describing: p1))
+  }
   /// Successful
   internal static var successful: String { return LocalizationKeys.tr("Localizable", "successful") }
   /// 3

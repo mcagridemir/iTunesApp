@@ -6,6 +6,12 @@
 //
 
 import UIKit
+import SwiftyUserDefaults
+
+extension DefaultsKeys {
+    var RemovedItemIds: DefaultsKey<[String]?> { return .init("RemovedItemIds") }
+    var Title: DefaultsKey<String?> { return .init("Title") }
+}
 
 extension UIColor {
     convenience init(hexString: String) {

@@ -17,8 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="second" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAP-h4-fOn">
-                                <rect key="frame" x="179" y="437.5" width="56" height="21"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="39j-09-nDZ">
+                                <rect key="frame" x="0.0" y="64" width="414" height="798"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1YA-aX-ytT">
+                                <rect key="frame" x="0.0" y="54" width="414" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -27,14 +31,23 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="JAP-h4-fOn" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="S0W-YL-JSh"/>
-                            <constraint firstItem="JAP-h4-fOn" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="beJ-T0-04z"/>
+                            <constraint firstItem="39j-09-nDZ" firstAttribute="top" secondItem="1YA-aX-ytT" secondAttribute="bottom" constant="10" id="De6-eY-fvI"/>
+                            <constraint firstItem="1YA-aX-ytT" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="KZF-J2-6AW"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="39j-09-nDZ" secondAttribute="trailing" id="Z4T-jE-Dca"/>
+                            <constraint firstItem="39j-09-nDZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Zp5-jf-y2h"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="39j-09-nDZ" secondAttribute="bottom" id="bVF-79-EEE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1YA-aX-ytT" secondAttribute="trailing" id="piU-fe-KTq"/>
+                            <constraint firstItem="1YA-aX-ytT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="toI-W8-M8L"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countLabel" destination="1YA-aX-ytT" id="SY4-pP-IYK"/>
+                        <outlet property="tableView" destination="39j-09-nDZ" id="wpx-73-4Un"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="19" y="72"/>
+            <point key="canvasLocation" x="18.840579710144929" y="71.651785714285708"/>
         </scene>
     </scenes>
     <resources>

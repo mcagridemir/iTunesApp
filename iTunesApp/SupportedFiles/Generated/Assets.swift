@@ -31,6 +31,7 @@ internal enum Assets {
       internal static let goBack = ImageAsset(name: "go-back")
       internal static let iconCross = ImageAsset(name: "icon-cross")
       internal static let infoWarning = ImageAsset(name: "info-warning")
+      internal static let smile = ImageAsset(name: "smile")
     }
     internal enum TabBar {
       internal static let accountActive = ImageAsset(name: "account-active")
@@ -44,6 +45,7 @@ internal enum Assets {
       internal static let shopActive = ImageAsset(name: "shop-active")
       internal static let shop = ImageAsset(name: "shop")
     }
+    internal static let kocLogo = ImageAsset(name: "koc-logo")
   }
   internal enum Colors {
     internal enum ForegroundColors {

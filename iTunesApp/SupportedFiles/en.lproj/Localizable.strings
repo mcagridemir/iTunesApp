@@ -14,3 +14,6 @@
 "two" = "2";
 "three" = "3";
 "four" = "4";
+
+// MARK: - Second
+"result_found" = "%@ adet sonuc bulundu.";

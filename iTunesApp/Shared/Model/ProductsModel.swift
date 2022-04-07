@@ -7,7 +7,9 @@
 
 import Foundation
 
-// If you are not going to use Equatable, remove it then.
+// TODO: - If you are not going to use Equatable, remove it then.
+
+// TODO: - Remove unnecessary variables when you're done.
 
 // MARK: - ProductsModel
 struct ProductsModel: Codable, Equatable {
@@ -24,4 +26,9 @@ struct Product: Codable, Equatable {
     let collectionName, artworkUrl100, releaseDate, currency, longDescription, kind: String?
     let collectionPrice: Double?
     let trackId: Int?
+    let artistName, trackName: String?
+    var formattedDate: String? {
+        let dateStr =  String(releaseDate?.split(separator: "T").first ?? "")
+        return Helper.formatDate(dateTxt: dateStr, inputFormat: "yyyy-MM-dd", outputFormat: "dd/MM/yyyy")
+    }
 }

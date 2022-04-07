@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SwiftyUserDefaults
 
 class Globals {
     static let shared = Globals()
@@ -14,4 +15,10 @@ class Globals {
     let screenWidth = UIScreen.main.bounds.width
     let screenHeight = UIScreen.main.bounds.height
     let BaseWebserviceUrl = "https://\(Bundle.main.infoDictionary?["ApiBase"] as? String ?? "")"
+    var removedItemIds: [String]? {
+        return Defaults[\.RemovedItemIds]
+    }
+    var title: String? {
+        return Defaults[\.Title]
+    }
 }

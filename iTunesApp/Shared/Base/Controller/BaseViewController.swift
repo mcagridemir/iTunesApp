@@ -5,8 +5,11 @@
 //  Created by Çağrı Demir on 4.04.2022.
 //
 
+import RxCocoa
+import RxSwift
 import Foundation
 import UIKit
+
 
 class BaseViewController : UIViewController {
     

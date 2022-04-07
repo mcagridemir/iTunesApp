@@ -1,5 +1,5 @@
 //
-//  ProductCollectionViewCell.swift
+//  ProductGridCollectionViewCell.swift
 //  iTunesApp
 //
 //  Created by Çağrı Demir on 5.04.2022.

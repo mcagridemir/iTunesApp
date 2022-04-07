@@ -16,4 +16,10 @@ class MainRouter {
         window.rootViewController = UINavigationController(rootViewController: vc)
         window.makeKeyAndVisible()
     }
+    
+    class func navigateToDetail(nav: UINavigationController?, imageUrl: String?, name: String?, longDescription: String?) {
+        guard let vc = StoryboardRedirect.Detail.instance.instantiateViewController(withIdentifier: "ProductDetailViewController") as? ProductDetailViewController else { return }
+        vc.setVariables(imageUrl: imageUrl, name: name, longDescription: longDescription)
+        nav?.show(vc, sender: nav?.parent)
+    }
 }

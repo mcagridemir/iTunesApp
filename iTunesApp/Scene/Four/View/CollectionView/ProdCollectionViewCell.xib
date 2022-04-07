@@ -108,6 +108,7 @@
             <size key="customSize" width="335" height="530"/>
             <connections>
                 <outlet property="artistLabel" destination="Yo8-ft-Pf9" id="xHZ-Wt-mXI"/>
+                <outlet property="closeImageView" destination="Fk5-05-MNM" id="1nA-Xt-FGB"/>
                 <outlet property="dateLabel" destination="rFt-Z0-1SB" id="hrq-0l-s7L"/>
                 <outlet property="imageView" destination="uNY-HO-sg4" id="42F-bL-4nZ"/>
                 <outlet property="priceLabel" destination="m4F-vJ-bgh" id="P3d-Qc-gzv"/>

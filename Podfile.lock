@@ -31,6 +31,7 @@ PODS:
   - SwiftMessages (9.0.6):
     - SwiftMessages/App (= 9.0.6)
   - SwiftMessages/App (9.0.6)
+  - SwiftyUserDefaults (5.3.0)
 
 DEPENDENCIES:
   - ImageSlideshow (~> 1.9.0)
@@ -44,6 +45,7 @@ DEPENDENCIES:
   - SwiftGen (~> 6.5.0)
   - SwiftLint (~> 0.43.1)
   - SwiftMessages (~> 9.0.2)
+  - SwiftyUserDefaults (~> 5.0)
 
 SPEC REPOS:
   trunk:
@@ -59,6 +61,7 @@ SPEC REPOS:
     - SwiftGen
     - SwiftLint
     - SwiftMessages
+    - SwiftyUserDefaults
 
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
@@ -73,7 +76,8 @@ SPEC CHECKSUMS:
   SwiftGen: a6d22010845f08fe18fbdf3a07a8e380fd22e0ea
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
   SwiftMessages: f0c7ef4705a570ad6c5e208b611f4333e660ed92
+  SwiftyUserDefaults: 63f80248cf5bfb3458825d9a78f2eb7e1293a040
 
-PODFILE CHECKSUM: e49a9715a08c6605fe2a891f937453497c5d35cb
+PODFILE CHECKSUM: e122119702688ca5f52e700573a69ecee62629ac
 
 COCOAPODS: 1.11.2

@@ -8,7 +8,8 @@
 import UIKit
 
 enum StoryboardRedirect: String {
-    case ApplicationMain = "ApplicationMain"
+    case ApplicationMain
+    case Detail
     
     var instance: UIStoryboard {
       return UIStoryboard(name: self.rawValue, bundle: Bundle.main)

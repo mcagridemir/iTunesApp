@@ -9,5 +9,5 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 BUNDLE_NAME = iTunesApp
-API_BASE2 = api.themoviedb.org/
+API_BASE2 = itunes.apple.com/
 PRODUCT_BUNDLE_IDENTIFIER = com.itunesapp.ios

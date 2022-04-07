@@ -13,7 +13,11 @@ A sample app to experiment with:
 - SkeletonView
 
 ![alt text](https://github.com/mcagridemir/iTunesApp/blob/f6ff2c6c541f1ad199a152efd8ccbcfc6d83af12/Screenshots/1stTab.png)
+
 ![alt text](https://github.com/mcagridemir/iTunesApp/blob/f6ff2c6c541f1ad199a152efd8ccbcfc6d83af12/Screenshots/2ndTab.png)
+
 ![alt text](https://github.com/mcagridemir/iTunesApp/blob/f6ff2c6c541f1ad199a152efd8ccbcfc6d83af12/Screenshots/3rdTab.png)
+
 ![alt text](https://github.com/mcagridemir/iTunesApp/blob/f6ff2c6c541f1ad199a152efd8ccbcfc6d83af12/Screenshots/4thTab.png)
+
 ![alt text](https://github.com/mcagridemir/iTunesApp/blob/f6ff2c6c541f1ad199a152efd8ccbcfc6d83af12/Screenshots/5Detail.png)

@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="ProductTableViewCell" customModule="iTunesApp" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductTableViewCell" rowHeight="60" id="KGk-i7-Jjw" customClass="ProductTableViewCell" customModule="iTunesApp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -28,6 +28,7 @@
                                 <rect key="frame" x="8" y="8" width="44" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="zBa-Wj-kqo" secondAttribute="height" multiplier="1:1" id="Knt-Ww-EN1"/>
+                                    <constraint firstAttribute="height" constant="44" id="qIp-G5-rPG"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lw-dn-0fR">
@@ -47,12 +48,15 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="zBa-Wj-kqo" secondAttribute="bottom" constant="8" id="08U-a8-XSa"/>
                             <constraint firstItem="zBa-Wj-kqo" firstAttribute="leading" secondItem="qpE-Dn-CfM" secondAttribute="leading" constant="8" id="0vr-fh-7Hh"/>
+                            <constraint firstItem="fPP-9Q-t2Y" firstAttribute="leading" secondItem="qpE-Dn-CfM" secondAttribute="leading" constant="60" id="ASj-vl-Tmw"/>
                             <constraint firstItem="fPP-9Q-t2Y" firstAttribute="leading" secondItem="zBa-Wj-kqo" secondAttribute="trailing" constant="8" id="D4T-EJ-v9E"/>
                             <constraint firstAttribute="trailing" secondItem="fPP-9Q-t2Y" secondAttribute="trailing" constant="50" id="Ibp-uf-NUm"/>
                             <constraint firstAttribute="trailing" secondItem="4lw-dn-0fR" secondAttribute="trailing" constant="50" id="LZR-fY-UVZ"/>
                             <constraint firstItem="4lw-dn-0fR" firstAttribute="leading" secondItem="zBa-Wj-kqo" secondAttribute="trailing" constant="8" id="MAf-xE-WiL"/>
                             <constraint firstItem="fPP-9Q-t2Y" firstAttribute="top" secondItem="4lw-dn-0fR" secondAttribute="bottom" constant="8" id="MAp-YI-fpO"/>
                             <constraint firstItem="4lw-dn-0fR" firstAttribute="top" secondItem="qpE-Dn-CfM" secondAttribute="top" constant="8" id="PPB-7c-0Bl"/>
+                            <constraint firstAttribute="height" constant="60" id="a3W-bI-4cE"/>
+                            <constraint firstItem="4lw-dn-0fR" firstAttribute="leading" secondItem="qpE-Dn-CfM" secondAttribute="leading" constant="60" id="o7b-3f-oYO"/>
                             <constraint firstItem="bGk-E3-MRO" firstAttribute="centerY" secondItem="qpE-Dn-CfM" secondAttribute="centerY" id="sbB-SI-R0N"/>
                             <constraint firstItem="zBa-Wj-kqo" firstAttribute="top" secondItem="qpE-Dn-CfM" secondAttribute="top" constant="8" id="vb2-T2-gQD"/>
                             <constraint firstAttribute="trailing" secondItem="bGk-E3-MRO" secondAttribute="trailing" constant="20" id="zec-M1-siv"/>
@@ -68,9 +72,11 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="imageView" destination="zBa-Wj-kqo" id="ZNA-jT-05z"/>
-                <outlet property="subtitleLabel" destination="fPP-9Q-t2Y" id="LGk-e4-3cO"/>
-                <outlet property="titleLabel" destination="4lw-dn-0fR" id="d4i-wQ-wTX"/>
+                <outlet property="artistLabel" destination="4lw-dn-0fR" id="d4i-wQ-wTX"/>
+                <outlet property="artistLblLeadingViewConst" destination="o7b-3f-oYO" id="MKm-nk-Swx"/>
+                <outlet property="prodImageView" destination="zBa-Wj-kqo" id="ZNA-jT-05z"/>
+                <outlet property="trackLabel" destination="fPP-9Q-t2Y" id="LGk-e4-3cO"/>
+                <outlet property="trackLblLeadingViewConst" destination="ASj-vl-Tmw" id="S0z-5R-R7a"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="87.723214285714278"/>
         </tableViewCell>
